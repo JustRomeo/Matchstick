@@ -36,12 +36,14 @@
 *.x86_64
 *.hex
 *matchstick*
+*unit_tests*
 
 # Debug files
 *.dSYM/
 *.su
 *.idb
 *.pdb
+*.gcda
 
 # Kernel Module Compile Results
 *.mod*

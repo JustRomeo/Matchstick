@@ -2,7 +2,7 @@
 ## EPITECH PROJECT, 2018
 ## Makefile
 ## File description:
-## My_Sokoban
+## Matchsticks
 ##
 
 SRCF = src/
@@ -45,7 +45,7 @@ exe:		$(NAME)
 
 valgrind:	$(OBJ)
 			make -C ./lib/my
-			gcc -o $(NAME) $(OBJ) $(CFLAGS) $(CUR) $(VALGRIND)
+			gcc -o $(NAME) $(OBJ) $(CFLAGS) $(VALGRIND)
 			rm -f $(OBJ)
 			valgrind ./$(NAME) $(ARGUMENTS)
 
@@ -65,7 +65,7 @@ error:		$(NAME)
 
 tests_run:	$(OBJ)
 			make -C ./lib/my
-			gcc -o $(CRITERION) $(OBJ) $(CFLAGS) $(CUR) $(CRIT)
+			gcc -o $(CRITERION) $(OBJ) tests/test.c $(CFLAGS) $(CRIT)
 			rm -f $(OBJ)
 			rm -f ../lib/my/libmy.a
 			rm -f lib/my/libmy.a
