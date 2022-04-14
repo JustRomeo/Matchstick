@@ -5,7 +5,7 @@
 ** remove.c
 */
 
-#include "include/prototype.h"
+#include "prototype.h"
 
 static int t = 1;
 

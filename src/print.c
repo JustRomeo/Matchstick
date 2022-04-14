@@ -5,7 +5,7 @@
 ** print.c
 */
 
-#include "include/prototype.h"
+#include "prototype.h"
 
 int print(char *resp_s, char *resp_l)
 {

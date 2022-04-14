@@ -16,10 +16,7 @@ SRC =	$(SRCF)main.c			\
 		$(SRCF)remove.c			\
 		$(SRCF)tools_remove.c	\
 
-SRCC =
-
 OBJ =	$(SRC:.c=.o)
-OBJC =	$(SRCC:.c=.o)
 
 NAME =	matchstick
 CRITERION = unit_tests
@@ -66,10 +63,10 @@ error:		$(NAME)
 			clear
 			./$(NAME) maps/errormap
 
-tests_run:	$(OBJC)
+tests_run:	$(OBJ)
 			make -C ./lib/my
-			gcc -o $(CRITERION) $(OBJC) $(CFLAGS) $(CUR) $(CRIT)
-			rm -f $(OBJC)
+			gcc -o $(CRITERION) $(OBJ) $(CFLAGS) $(CUR) $(CRIT)
+			rm -f $(OBJ)
 			rm -f ../lib/my/libmy.a
 			rm -f lib/my/libmy.a
 			./$(CRITERION)

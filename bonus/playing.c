@@ -5,7 +5,7 @@
 ** Playing.c
 */
 
-#include "include/prototype.h"
+#include "prototype.h"
 
 int player_turn(char *map, char *resp, int rule)
 {

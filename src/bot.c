@@ -5,7 +5,7 @@
 ** BOT.c
 */
 
-#include "include/prototype.h"
+#include "prototype.h"
 
 static int line = 0;
 static int rm = 0;

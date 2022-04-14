@@ -5,7 +5,7 @@
 ** tools.c
 */
 
-#include "include/prototype.h"
+#include "prototype.h"
 
 void loop_str(char *str, char *answer, int *s, int *z)
 {

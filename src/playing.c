@@ -5,7 +5,7 @@
 ** Playing.c
 */
 
-#include "include/prototype.h"
+#include "prototype.h"
 
 static int rule = 0;
 static int max_l = 0;

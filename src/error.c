@@ -5,7 +5,7 @@
 ** Error.c
 */
 
-#include "include/prototype.h"
+#include "prototype.h"
 
 static int cl = 0;
 static int cs = 0;
